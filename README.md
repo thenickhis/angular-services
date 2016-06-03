@@ -22,3 +22,23 @@ Add the controller directive in the `index.html` file.
 Let's make sure things are wired up correctly. 
 In your controller, add `$scope.test = 'Hello, Avengers';`.
 Then, through your `index.html` and the `{{ }}` syntax, add the test string and open your app in your browser to make sure things are working.
+
+###Step 2
+####Getting data from your service
+Currently there is an array in `dataService`. In your controller, get that data from the service and into your controller. Check to make sure that it is there. You can use the debugger, or a console log, etc.
+
+####Put the data onto the $scope object
+Now that you have the data, put it onto the $scope object.
+
+###Step 3
+####Build a card for each hero
+You will see a div in the `index.html` that has the class `.hero-wrapper`. Nested in that div is another div, `.hero-card`. Build an ng-repeat onto the `.hero-card` div.
+
+####Build out the hero card details
+Inside of `.hero-card`, there are other elements. You should be able to build out all of the hero's details into those elements. (Hint: the image is a little tricky...).
+
+####Take a look at your app in your browser, and see if you have all of the hero cards!
+
+###Black Diamond
+####Filter cards by hero name
+You will notice in `index.html` that there is a form, and an input. Using all of your Angular knowledge, and all of your Googling powers, build a way to filter the hero cards by the hero's name!!
